@@ -39,5 +39,6 @@ int main() {
     return EXIT_FAILURE;
   }
 
+  printf("\nAll tests passed.\n");
   return EXIT_SUCCESS;
 }

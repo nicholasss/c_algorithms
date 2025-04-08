@@ -1,8 +1,8 @@
 #ifndef BINARY_SEARCH
 #define BINARY_SEARCH
 
-#import <stdbool.h>
-#import <stdlib.h>
+#include <stdbool.h>
+#include <stdlib.h>
 
 #define SEARCH_FAILURE -1
 

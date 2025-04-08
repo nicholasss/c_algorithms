@@ -3,6 +3,8 @@
 
 #include <stdlib.h>
 
+// TODO: move to `int arr[], size_t length`
+
 #define SEARCH_FAILURE -1
 
 // returns search_failure (-1) if the num was not found

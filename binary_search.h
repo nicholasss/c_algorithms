@@ -4,6 +4,8 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
+// TODO: move to `int arr[], size_t length`
+
 #define SEARCH_FAILURE -1
 
 // returns int

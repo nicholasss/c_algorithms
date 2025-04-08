@@ -3,18 +3,21 @@
 
 #include "binary_search.h"
 
-int main(int argc, char *argv[]) {
+int main() {
   printf("Testing binary search.\n");
 
   // testing small array
   int small_array[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
-  int ok = binary_search(small_array, 10, 3);
-  if (ok == -1) {
+  int index_got = binary_search(small_array, 10, 3);
+  int index_wanted = 2;
+
+  if (index_got == -1) {
     printf("binary search failed to find anything.\n");
     return EXIT_FAILURE;
-  } else if (ok != 2) {
-    printf("binary search found wrong index. expected %d, got %d\n", 2, ok);
+  } else if (index_got != index_wanted) {
+    printf("binary search found wrong index. expected %d, got %d\n", 2,
+           index_got);
     return EXIT_FAILURE;
   }
 
@@ -24,12 +27,15 @@ int main(int argc, char *argv[]) {
     large_array[i] = i + 1;
   }
 
-  ok = binary_search(large_array, 40, 38);
-  if (ok == -1) {
+  index_got = binary_search(large_array, 40, 38);
+  index_wanted = 37;
+
+  if (index_got == -1) {
     printf("binary search failed to find anything.\n");
     return EXIT_FAILURE;
-  } else if (ok != 2) {
-    printf("binary search found wrong index. expected %d, got %d\n", 37, ok);
+  } else if (index_got != index_wanted) {
+    printf("binary search found wrong index. expected %d, got %d\n", 37,
+           index_got);
     return EXIT_FAILURE;
   }
 

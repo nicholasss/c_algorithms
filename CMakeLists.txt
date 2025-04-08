@@ -28,15 +28,19 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 # libraries
 add_library(binary_search STATIC binary_search.c binary_search.h)
 add_library(linear_search STATIC linear_search.c linear_search.h)
+add_library(selection_sort STATIC selection_sort.c selection_sort.h)
 
 # add executable
 add_executable(test_binary_search test_binary_search.c)
 add_executable(test_linear_search test_linear_search.c)
+add_executable(test_selection_sort test_selection_sort.c)
 
 # set target and direct to link with libraries
 target_link_libraries(test_binary_search binary_search)
 target_link_libraries(test_linear_search linear_search)
+target_link_libraries(test_selection_sort selection_sort)
 
 # set compiler flags
 target_compile_options(test_binary_search PRIVATE ${COMPILER_FLAGS})
 target_compile_options(test_linear_search PRIVATE ${COMPILER_FLAGS})
+target_compile_options(test_selection_sort PRIVATE ${COMPILER_FLAGS})

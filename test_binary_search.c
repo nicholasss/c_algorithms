@@ -4,7 +4,7 @@
 #include "binary_search.h"
 
 int main() {
-  printf("Testing binary search\n");
+  printf("Testing Binary Search\n");
 
   // testing small array
   int small_array[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};

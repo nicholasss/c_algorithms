@@ -1,8 +1,7 @@
 #include <stdbool.h>
 #include <stdio.h>
-#include <stdlib.h>
 
-#include "selection_sort.h"
+#include "bubble_sort.h"
 
 bool array_compare(int *arr1, int *arr2, int length) {
   for (int i = 0; i < length; i++) {
@@ -14,13 +13,13 @@ bool array_compare(int *arr1, int *arr2, int length) {
 }
 
 int main() {
-  printf("Testing Selection Sort\n");
+  printf("Testing Bubble Sort\n");
 
   // testing small array
   int small_array[10] = {9, 2, 4, 10, 8, 5, 7, 6, 1, 3};
   int small_want[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
-  selection_sort(small_array, 10);
+  bubble_sort(small_array, 10);
   if (!array_compare(small_array, small_want, 10)) {
     printf("selection sort failed on the small array.\n");
     return EXIT_FAILURE;
@@ -42,7 +41,7 @@ int main() {
       69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85,
       86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100};
 
-  selection_sort(large_array, 100);
+  bubble_sort(large_array, 100);
   if (!array_compare(large_array, large_want, 100)) {
     printf("selection sort failed on the large array.\n");
     return EXIT_FAILURE;

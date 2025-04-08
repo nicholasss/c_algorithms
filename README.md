@@ -8,7 +8,13 @@ If its not written in C, is it really an algorithm?
 
 #### Linear Search
 
+Function will return a -1 if it failed to find the number.
+It requires the array, length of array, and number to search for.
+
 #### Binary Search
+
+Function will return a -1 if it failed to find the number.
+It requires the array, length of array, and number to search for.
 
 #### Depth-First Search (DFS)
 

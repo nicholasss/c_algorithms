@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 #include "bubble_sort.h"
+#include "print_array.h"
 
 bool array_compare(int *arr1, int *arr2, int length) {
   for (int i = 0; i < length; i++) {
@@ -47,6 +48,7 @@ int main() {
     return EXIT_FAILURE;
   }
 
+  print_array(large_array, 100);
   printf("\nAll tests passed.\n");
   return EXIT_SUCCESS;
 }

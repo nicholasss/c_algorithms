@@ -10,6 +10,9 @@ project(Algorithms
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
+# setting debug option
+set(CMAKE_BUILD_TYPE Debug)
+
 # setting compiler flags
 set(COMPILER_FLAGS
   -g

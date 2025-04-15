@@ -22,7 +22,7 @@ int main() {
 
   bubble_sort(small_array, 10);
   if (!array_compare(small_array, small_want, 10)) {
-    printf("selection sort failed on the small array.\n");
+    printf("bubble sort failed on the small array.\n");
     return EXIT_FAILURE;
   }
 
@@ -44,7 +44,7 @@ int main() {
 
   bubble_sort(large_array, 100);
   if (!array_compare(large_array, large_want, 100)) {
-    printf("selection sort failed on the large array.\n");
+    printf("bubble sort failed on the large array.\n");
     return EXIT_FAILURE;
   }
 

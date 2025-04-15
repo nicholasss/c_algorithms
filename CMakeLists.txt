@@ -26,6 +26,9 @@ set(COMPILER_FLAGS
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
 # libraries
+add_library(print_array STATIC print_array.c print_array.h)
+
+# algorithm library
 add_library(binary_search STATIC binary_search.c binary_search.h)
 add_library(linear_search STATIC linear_search.c linear_search.h)
 add_library(selection_sort STATIC selection_sort.c selection_sort.h)
@@ -38,10 +41,10 @@ add_executable(test_selection_sort test_selection_sort.c)
 add_executable(test_bubble_sort test_bubble_sort.c)
 
 # set target and direct to link with libraries
-target_link_libraries(test_binary_search binary_search)
-target_link_libraries(test_linear_search linear_search)
-target_link_libraries(test_selection_sort selection_sort)
-target_link_libraries(test_bubble_sort bubble_sort)
+target_link_libraries(test_binary_search binary_search print_array)
+target_link_libraries(test_linear_search linear_search print_array)
+target_link_libraries(test_selection_sort selection_sort print_array)
+target_link_libraries(test_bubble_sort bubble_sort print_array)
 
 # set compiler flags
 target_compile_options(test_binary_search PRIVATE ${COMPILER_FLAGS})

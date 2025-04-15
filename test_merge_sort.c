@@ -20,7 +20,7 @@ int main() {
   int small_array[10] = {9, 2, 4, 10, 8, 5, 7, 6, 1, 3};
   int small_want[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
-  merge_sort(small_array, 0, 10);
+  merge_sort(small_array, 0, 9);
   if (!array_compare(small_array, small_want, 10)) {
     printf("merge sort failed on the small array.\n");
     return EXIT_FAILURE;
@@ -42,7 +42,7 @@ int main() {
       69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85,
       86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100};
 
-  merge_sort(large_array, 0, 100);
+  merge_sort(large_array, 0, 99);
   if (!array_compare(large_array, large_want, 100)) {
     printf("merge sort failed on the large array.\n");
     return EXIT_FAILURE;

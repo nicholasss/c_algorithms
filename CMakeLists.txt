@@ -12,7 +12,7 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 
 # setting compiler flags
 set(COMPILER_FLAGS
-  -ggdb3
+  -g
   -Wall
   -Wextra
   -Wconversion

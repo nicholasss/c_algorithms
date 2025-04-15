@@ -5,7 +5,7 @@ void print_array(int arr[], size_t length) {
     return;
   }
 
-  printf("Array:\n");
+  printf("\nArray:\n");
   printf("%d", arr[0]);
 
   for (int i = 1; i < length; i++) {

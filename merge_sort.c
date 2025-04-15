@@ -52,7 +52,7 @@ void merge(int arr[], int left, int mid, int right) {
 void merge_sort(int arr[], int left, int right) {
   // if statement recurses until it reaches a sorted array (one element)
   if (left < right) {
-    int mid = left + (right - 1) / 2;
+    int mid = left + (right - left) / 2;
 
     // recursive calls to sort the two halves
     merge_sort(arr, left, mid);

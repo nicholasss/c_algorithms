@@ -45,7 +45,12 @@ void selection_sort(int *arr, int length);
 
 #### Bubble Sort
 
-_Not implemented yet._
+Function sorts the array in place, it does not return anything.
+It requires the array and length of array.
+
+```c
+void bubble_sort(int arr[], size_t length);
+```
 
 #### Merge Sort
 

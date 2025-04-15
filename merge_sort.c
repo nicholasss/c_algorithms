@@ -1,5 +1,4 @@
 #include "merge_sort.h"
-#include <stdio.h>
 
 // merges the two subarrays, actually does sorting on merge
 // first is:  arr[left...mid]
